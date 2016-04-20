@@ -11,9 +11,9 @@ use yii\web\ForbiddenHttpException;
 
 
 
-class AccessControl extends ActionFilter
+class MwAccessControl extends ActionFilter
 {
-	
+
 }
 
 ?>
