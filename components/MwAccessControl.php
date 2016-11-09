@@ -30,9 +30,6 @@ class MwAccessControl extends ActionFilter {
         //load roles from auth manager 
         $this->_authManager = Instance::ensure("authManager", DbManager::className());
         $this->_urlManager = Instance::ensure("urlManager", UrlManager::className());
-        //$data = $this->_authManager->getPermissionsByUser($this->userId);
-        // print_r($data);
-        // exit;
     }
 
     public function beforeAction($action) {
