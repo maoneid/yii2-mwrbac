@@ -1,8 +1,8 @@
 {
-    "name": "mw/yii2-mwrbac",
+    "name": "mwsys/yii2-mwrbac",
     "description": "Yii2 RBAC Extension",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension","rbac","mw"],
+    "keywords": ["yii2","extension","rbac","mwsys"],
     "license": "MIT",
     "authors": [
         {
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "mw\\mwrbac\\": ""
+            "mwsys\\mwrbac\\": ""
         }
     }
 }
