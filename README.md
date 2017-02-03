@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist mw/yii2-mwrbac "*"
+php composer.phar require --prefer-dist mwsys/yii2-mwrbac "*"
 ```
 
 or add
 
 ```
-"mw/yii2-mwrbac": "*"
+"mwsys/yii2-mwrbac": "*"
 ```
 
 to the require section of your `composer.json` file.
