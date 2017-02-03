@@ -25,7 +25,21 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-Once the extension is installed, simply use it in your code by  :
+Up to this moment, this extension  only provide actionfilter to handle regex-based access rights
 
-```php
-<?= \mw\mwrbac\AutoloadExample::widget(); ?>```
+Add parameter to the parameters, this config indicate that filter will add route otomatically as auth item. 
+
+'add_auth_item' => true,
+
+Add behavior in configuration. 
+....
+'as checkuser' => [
+    'class' => 'mw\mwrbac\components\MwAccessControl',
+    'allowActions' => [
+            'site/*',
+    ],
+    
+    
+...
+    
+    
