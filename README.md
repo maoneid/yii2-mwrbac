@@ -36,7 +36,7 @@ Add behavior in configuration.
 
 ....
 'as checkuser' => [
-    'class' => 'mw\mwrbac\components\MwAccessControl',
+    'class' => 'mwsys\mwrbac\components\MwAccessControl',
     'allowActions' => [
             'site/*',
     ],
