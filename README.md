@@ -32,6 +32,8 @@ Add parameter to the parameters, this config indicate that filter will add route
 'add_auth_item' => true,
 
 Add behavior in configuration. 
+
+
 ....
 'as checkuser' => [
     'class' => 'mw\mwrbac\components\MwAccessControl',
