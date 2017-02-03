@@ -1,6 +1,6 @@
 <?php
 
-namespace mw\mwrbac\components;
+namespace mwsys\mwrbac\components;
 
 use Yii;
 use yii\base\Action;
