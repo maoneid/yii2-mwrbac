@@ -34,10 +34,6 @@ class MwAccessControl extends ActionFilter {
 
     public function beforeAction($action) {
         
-        $request = Yii::$app->request;
-        if ($request->method == 'OPTIONS'){
-            return true;
-        }
         
         $user = Yii::$app->user;
         $authitem = $action->uniqueId;
