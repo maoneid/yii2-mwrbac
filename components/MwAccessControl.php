@@ -28,8 +28,10 @@ class MwAccessControl extends ActionFilter {
         $this->userId = $this->user->getId();
 
         //load roles from auth manager 
-        $this->_authManager = Instance::ensure("authManager", DbManager::className());
-        $this->_urlManager = Instance::ensure("urlManager", UrlManager::className());
+        //$this->_authManager = Instance::ensure("authManager", DbManager::className());
+        //$this->_urlManager = Instance::ensure("urlManager", UrlManager::className());
+        $this->_authManager = Yii::$app->authManager;
+        $this->_urlManager = Yii::$app->urlManager;
     }
 
     public function beforeAction($action) {
