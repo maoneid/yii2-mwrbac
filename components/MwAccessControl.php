@@ -82,7 +82,9 @@ class MwAccessControl extends ActionFilter {
         
         $actionUniqueId = $action->uniqueId;
         $allAction = preg_replace(array("/\/\w+[\s\S]\w+$/"), array("/*"), $actionUniqueId);
-        $allModule = preg_replace(array("/\/\w+[\s\S]\w+\/\*$/"), array("/*"), $allAction);
+        //$allModule = preg_replace(array("/\/\w+[\s\S]\w+\/\*$/"), array("/*"), $allAction);
+        //update regex for all modules \/[\s\S][a-z]+\w-.+\/\*$
+        $allModule = preg_replace(array('/\/[\s\S][a-z]+\w-.+\/\*$/'), array("/*"), $allAction);
         
         //for all module 
         if (in_array($allModule, $this->allowedActions)){
